@@ -1,0 +1,59 @@
+/* Center content on the page */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Increase font size */
+.larger {
+  font-size: 3em; /* Adjust the size as needed */
+}
+
+/* Flashing effect */
+@keyframes flash {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.flashing {
+  animation: flash 1s infinite; /* Adjust duration as needed */
+}
+
+/* Red text color with flashing */
+.flashing-red {
+  animation: flash 1s infinite, flash-red 1s infinite; /* Apply two animations */
+  color: red;
+}
+
+@keyframes flash-red {
+  0% { color: red; }
+  50% { color: black; }
+  100% { color: red; }
+}
+
+
+/* Center content on the page */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Other CSS rules... */
+
+
+/* Groot image styles */
+.groot {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto; /* Adjust size as needed */
+  height: auto;
+}
